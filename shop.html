@@ -4,13 +4,14 @@
     <head>
         <meta charset="utf-8">
         <title>Средства для ухода</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     
     <body>
         <header class="main-header">
             <div class="container">
                 <div class="logo-header">
-                    <img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»">
+                    <a href="index.html"><img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
                 </div>
                 <nav class="main-navigation">
                     <ul>
@@ -40,57 +41,53 @@
             <section class="catalog-header">
                 <h1 class="catalog-title">Средства для ухода</h1>
                 <div class="catalog-breadcrumbs">
-                    <ul>
-                        <li>
-                            <a href="#">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#">Магазин</a>
-                        </li>
-                        <li>
-                            <a class="catalog-breadcrumbs-active" href="#">Средства для ухода</a>
-                        </li>
-                    </ul>
+                    <a href="#">Главная</a>
+                    <a href="#">Магазин</a>
+                    <a class="catalog-breadcrumbs-active" href="#">Средства для ухода</a>
                 </div>
             </section>
             <div class="catalog-content-left">
                 <section class="catalog-filter">
                     <h2 class="filter-title">Производители:</h2>
                     <div class="filter-manufacturers">
-                        <label for="baxter-of-california">
-                            <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked> Baxter of California
-                        </label><br>
-                        <label for="mr-natty">
-                            <input type="checkbox" name="mr-natty" id="mr-natty"> Mr Natty
-                        </label><br>
-                        <label for="suavecito">
-                            <input type="checkbox" name="suavecito" id="suavecito" checked> Suavecito
-                        </label><br>
-                        <label for="malin-goetz">
-                            <input type="checkbox" name="malin-goetz" id="malin-goetz"> Malin+Goetz
-                        </label><br>
-                        <label for="murrays">
-                            <input type="checkbox" name="murrays" id="murrays"> Murray’s
-                        </label><br>
-                        <label for="american-crew">
-                            <input type="checkbox" name="american-crew" id="american-crew" checked> American Crew
-                        </label>
+                        <form>
+                            <label for="baxter-of-california">
+                                <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked> Baxter of California
+                            </label>
+                            <label for="mr-natty">
+                                <input type="checkbox" name="mr-natty" id="mr-natty"> Mr Natty
+                            </label>
+                            <label for="suavecito">
+                                <input type="checkbox" name="suavecito" id="suavecito" checked> Suavecito
+                            </label>
+                            <label for="malin-goetz">
+                                <input type="checkbox" name="malin-goetz" id="malin-goetz"> Malin+Goetz
+                            </label>
+                            <label for="murrays">
+                                <input type="checkbox" name="murrays" id="murrays"> Murray’s
+                            </label>
+                            <label for="american-crew">
+                                <input type="checkbox" name="american-crew" id="american-crew" checked> American Crew
+                            </label>
+                        </form>
                     </div>
                 </section>
                 <section class="catalog-filter">
                     <h2 class="filter-title">Группы товаров:</h2>
                     <div class="filter-groups">
-                        <label for="shaving">
-                            <input type="radio" name="shaving" id="shaving"> Бритвенные принадлежности
-                        </label><br>
-                        <label for="means-care">
-                            <input type="radio" name="means-care" id="means-care" checked> Средства для ухода
-                        </label><br>
-                        <label for="accessories">
-                            <input type="radio" name="accessories" id="accessories"> Аксессуары
-                        </label>
+                        <form>
+                            <label for="shaving">
+                                <input type="radio" name="shaving" id="shaving"> Бритвенные принадлежности
+                            </label>
+                            <label for="means-care">
+                                <input type="radio" name="means-care" id="means-care" checked> Средства для ухода
+                            </label>
+                            <label for="accessories">
+                                <input type="radio" name="accessories" id="accessories"> Аксессуары
+                            </label>
+                        </form>
                     </div>
-                    <a class="catalog-filter-btn" href="#">Показать</a>
+                    <input class="catalog-filter-btn" type="submit" value="Показать">
                 </section>
             </div>
             <div class="catalog-content-right">
@@ -101,7 +98,7 @@
                         </div>
                         <p class="catalog-name">Набор для путешествий «Baxter of California»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">2 900 РУБ.</div>
+                            <span class="catalog-price">2 900 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -111,7 +108,7 @@
                         </div>
                         <p class="catalog-name">Увлажняющий кондиционер «Baxter of California»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">750 РУБ.</div>
+                            <span class="catalog-price">750 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -121,7 +118,7 @@
                         </div>
                         <p class="catalog-name">Гель для волос «SUAVECITO»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">290 РУБ.</div>
+                            <span class="catalog-price">290 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -131,7 +128,7 @@
                         </div>
                         <p class="catalog-name">Глина для укладки волос «American crew»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">500 РУБ.</div>
+                            <span class="catalog-price">500 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -141,7 +138,7 @@
                         </div>
                         <p class="catalog-name">Гель для волос «AMERICAN CREW»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">300 РУБ.</div>
+                            <span class="catalog-price">300 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
@@ -151,20 +148,16 @@
                         </div>
                         <p class="catalog-name">Набор для бритья «Baxter of California»</p>
                         <div class="catalog-buy">
-                            <div class="catalog-price">3 900 РУБ.</div>
+                            <span class="catalog-price">3 900 РУБ.</span>
                             <a class="catalog-buy-btn" href="#">Купить</a>
                         </div>
                     </div>
                 </section>
                 <section class="catalog-pagination">
-                    <ul>
-                        <li>
-                            <a class="catalog-pagination-btn" href="#">1</a>
-                            <a class="catalog-pagination-active-btn" href="#">2</a>
-                            <a class="catalog-pagination-btn" href="#">3</a>
-                            <a class="catalog-pagination-btn" href="#">4</a>
-                        </li>
-                    </ul>
+                    <a class="catalog-pagination-btn" href="#">1</a>
+                    <span class="catalog-pagination-active-btn">2</span>
+                    <a class="catalog-pagination-btn" href="#">3</a>
+                    <a class="catalog-pagination-btn" href="#">4</a>
                 </section>
             </div>
         </main>
